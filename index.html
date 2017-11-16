@@ -67,11 +67,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<li><a href="files/cv/CV_ver19.pdf" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span>CV</a></li>
 			-->
 
-				 <li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>View photo</a></li>
-				 <div id="small-dialog" class="mfp-hide">
-					 <img src="images/profile_2015_mid.jpg" alt=""/>
-				 </div>
-				 
+				 #content {
+    position: relative;
+}
+#content img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+<div id="content">
+    <img src="images/ribbon.png" class="ribbon"/>
+    <div>some text...</div>
+</div>
+
 				 <script>
 						$(document).ready(function() {
 						$('.popup-with-zoom-anim').magnificPopup({
